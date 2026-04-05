@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "xlock-py"
+version = "0.1.0"
+description = "x-lock bot protection middleware for Python — invisible alternative to reCAPTCHA"
+requires-python = ">=3.8"
+license = "MIT"
+readme = "README.md"
+authors = [{ name = "x-lock", email = "dev@x-lock.dev" }]
+keywords = [
+    "xlock",
+    "bot-protection",
+    "captcha",
+    "middleware",
+    "fastapi",
+    "django",
+    "flask",
+    "recaptcha-alternative",
+    "proof-of-work",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Django",
+    "Framework :: FastAPI",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Security",
+]
+
+[project.optional-dependencies]
+fastapi = ["httpx>=0.24.0", "starlette>=0.20.0"]
+flask = ["httpx>=0.24.0", "flask>=2.0.0"]
+django = []
+all = ["httpx>=0.24.0", "starlette>=0.20.0", "flask>=2.0.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["xlock"]
+
+[project.urls]
+Homepage = "https://x-lock.dev"
+Repository = "https://github.com/x-lock-dev/xlock-python"
+Issues = "https://github.com/x-lock-dev/xlock-python/issues"
