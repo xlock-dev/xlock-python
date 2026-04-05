@@ -9,7 +9,7 @@ description = "x-lock bot protection middleware for Python — invisible alterna
 requires-python = ">=3.8"
 license = "MIT"
 readme = "README.md"
-authors = [{ name = "x-lock", email = "dev@x-lock.dev" }]
+authors = [{ name = "x-lock", email = "dev@x-lock.cloud" }]
 keywords = [
     "xlock",
     "bot-protection",
@@ -49,6 +49,6 @@ all = ["httpx>=0.24.0", "starlette>=0.20.0", "flask>=2.0.0"]
 packages = ["xlock"]
 
 [project.urls]
-Homepage = "https://x-lock.dev"
+Homepage = "https://x-lock.cloud"
 Repository = "https://github.com/x-lock-dev/xlock-python"
 Issues = "https://github.com/x-lock-dev/xlock-python/issues"

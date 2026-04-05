@@ -74,7 +74,7 @@ if result.blocked:
 | Option | Env Var | Default | Description |
 |--------|---------|---------|-------------|
 | `site_key` | `XLOCK_SITE_KEY` | — | Your x-lock site key |
-| `api_url` | `XLOCK_API_URL` | `https://api.x-lock.dev` | API endpoint |
+| `api_url` | `XLOCK_API_URL` | `https://api.x-lock.cloud` | API endpoint |
 | `fail_open` | `XLOCK_FAIL_OPEN` | `True` | Allow requests on API errors |
 | `protected_paths` | `XLOCK_PROTECTED_PATHS` | `[]` | Path prefixes to protect |
 
